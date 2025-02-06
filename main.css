@@ -1,3 +1,14 @@
+body{ 
+        font-family: "Gasoek One", serif;
+        font-weight: 100;
+        font-style: normal;
+      }
+      
+
 svg{
-    fill:lavender;
+    fill:lightblue;
+}
+
+svg:hover{
+    fill:cadetblue;
 }
