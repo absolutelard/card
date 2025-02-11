@@ -2,7 +2,7 @@ body {
     font-family: "Gasoek One", serif;
     font-weight: 100;
     font-style: normal;
-    background-image: url('Images/Desktop-Background.JPG');
+    background-color: cadetblue;
 }
 
 svg {
