@@ -1,63 +1,77 @@
-body { 
-    font-family: "Gasoek One", serif;
-    font-weight: 100;
-    font-style: normal;
-    background-color: cadetblue;
+body {
+  font-family: "Gasoek One", serif;
+  font-weight: 80;
+  font-style: normal;
+  background-image: url(Images/Desktop-Background.JPG);
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-svg {
-    fill: rgb(8, 52, 66);
+.business-card {
+  background-color: #feffb7;
+  width: 300px;
+  height: 450px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
 }
 
-svg:hover {
-    fill: rgb(15, 100, 103);
-}
-.card {
-    position: relative;
-    width:700px;
-    z-index: 10;
-    text-align: center;
-    background: rgba(75, 114, 255, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    color: white;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
-}
-/* Fixed Bottom Container */
-.icon-container { 
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-    text-align: center;
-    z-index: 2;
-    /* animation: fadeIn 1.5s ease-in-out; */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  top: 20px; 
 }
 
-svg:hover{
-    animation: fadeIn 1.5s ease-in-out;
+.business-card img {
+  width: 300px;
+  height: 300px;
+  margin: 0px;
 }
-@keyframes fadeIn {
-    0% {
-        opacity:0.7;
-        transform : scale(0.5);
-    }
-    50% {
-        opacity: 1;
-        transform: scale(1);
-    }
-    100% {
-        opacity: 0.7;
-        transform: scale(.5)
-    }
+
+
+h1 {
+  font-size: 35px;
+  font-weight: 30;
+  text-align: left;
+  padding-top: 260px;
+  margin-bottom: 0;
 }
-/* Icon Hover Effects */
-.icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    cursor: pointer;
-    transition: transform 0.2s ease, opacity 0.2s ease;
+
+h2 {
+  font-size: 15px;
+  font-weight: 20;
+  text-align: left;
+  padding-bottom: 45px;
+  margin-top: 0;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  margin-bottom: 0px;
+  align-content: left;
+}
+
+.icon-container svg {
+  fill: rgb(8, 52, 66);
+  transition: fill 0.3s ease;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-container svg:hover {
+  fill: rgb(0, 247, 255);
 }
