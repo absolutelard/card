@@ -6,9 +6,58 @@ body {
 }
 
 svg {
-    fill: lightblue;
+    fill: rgb(8, 52, 66);
 }
 
 svg:hover {
-    fill: cadetblue;
+    fill: rgb(15, 100, 103);
+}
+.card {
+    position: relative;
+    width:700px;
+    z-index: 10;
+    text-align: center;
+    background: rgba(75, 114, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+/* Fixed Bottom Container */
+.icon-container { 
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    text-align: center;
+    z-index: 2;
+    /* animation: fadeIn 1.5s ease-in-out; */
+}
+
+svg:hover{
+    animation: fadeIn 1.5s ease-in-out;
+}
+@keyframes fadeIn {
+    0% {
+        opacity:0.7;
+        transform : scale(0.5);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0.7;
+        transform: scale(.5)
+    }
+}
+/* Icon Hover Effects */
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
 }
