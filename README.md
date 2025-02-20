@@ -1,0 +1,1 @@
+## This website is my first website i've ever made, and I learned a whole lot about HTML and CSS in the process. 

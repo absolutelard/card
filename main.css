@@ -50,8 +50,9 @@ h1 {
 }
 
 h2 {
-  font-size: 15px;
-  font-weight: 2px;
+  font-size: 14px;
+  font-weight: 1;
+  font-style: light;
   text-align: left;
   padding-bottom: 45px;
   margin-top: 0;
@@ -66,12 +67,18 @@ h2 {
 }
 
 .icon-container svg {
-  fill: rgb(8, 52, 66);
+  fill: rgb(255, 126, 83);
   transition: fill 0.3s ease;
   width: 30px;
   height: 30px;
 }
 
 .icon-container svg:hover {
-  fill: rgb(0, 247, 255);
+  fill: rgb(255, 47, 0);
+}
+
+@media screen and (max-width: 750px) {
+  .icon-container {
+     gap: 10px;
+    }
 }
