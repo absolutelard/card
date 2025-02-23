@@ -2,7 +2,7 @@ body {
   font-family: "Gasoek One", serif;
   font-weight: 80;
   font-style: normal;
-  background-image: url(Images/Desktop-Background.JPG);
+  background-image: url(Images/Background.JPG);
   background-size: cover;
   margin: 0;
   padding: 0;
@@ -62,15 +62,17 @@ h2 {
   display: flex;
   justify-content: space-around;
   width: 30%;
-  margin-bottom: 0px;
-  align-content: left;
+  margin-bottom: 5px;
+  margin-right: 20px;
+  align-content: center;
+  gap: 10px;
 }
 
 .icon-container svg {
   fill: rgb(255, 126, 83);
   transition: fill 0.3s ease;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
 }
 
 .icon-container svg:hover {
